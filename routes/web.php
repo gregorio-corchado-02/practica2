@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+/* El primer parametro es el nombre de la ruta y el segundo parametro es el nombre del archivo*/
+
+Route::view('/','Welcome')->name('rutaInicio');
+Route::view('/formulario','formulario')->name('rutaFormulario');
+Route::view('/recuerdos','recuerdos')->name('rutaRecuerdos');
